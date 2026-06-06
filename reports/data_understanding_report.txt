@@ -1,0 +1,45 @@
+================================================================================
+MARKET MIX MODELING - DATA UNDERSTANDING REPORT
+================================================================================
+Generated on: 2026-06-06 18:32:26
+
+EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+Dataset Size: 11,232 records × 28 columns
+Memory Usage: 4.86 MB
+Data Quality: 100.00%
+
+DATA TYPES SUMMARY
+--------------------------------------------------------------------------------
+  float64         :  21 columns
+  object          :   4 columns
+  int64           :   3 columns
+
+KEY BUSINESS METRICS
+--------------------------------------------------------------------------------
+Total Sales Value: ₹371,768,560.55
+Average Sales Value: ₹33,099.05
+Total Sales Units: 4,744,759
+Total Trade Spend: ₹606,269,646.19
+
+GEOGRAPHIC & BRAND DISTRIBUTION
+--------------------------------------------------------------------------------
+Geographic Regions: 8
+  • CENTRAL: 1,404 records
+  • EAST: 1,404 records
+  • METRO_DELHI: 1,404 records
+  • METRO_MUMBAI: 1,404 records
+  • NORTH: 1,404 records
+  • NORTHEAST: 1,404 records
+  • SOUTH: 1,404 records
+  • WEST: 1,404 records
+Number of Brands: 3
+  • BrandA
+  • BrandB
+  • BrandC
+
+DATA QUALITY ASSESSMENT
+--------------------------------------------------------------------------------
+Missing Values: 0 (✓ No issues)
+Duplicate Rows: 0
+Data Completeness: 100%
