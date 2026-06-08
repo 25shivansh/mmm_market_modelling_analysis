@@ -1,0 +1,25 @@
+Baseline Linear Regression — Business Interpretation
+
+Model performance:
+- train_r2: 0.9848
+- test_r2: 0.9849
+- train_rmse: 2628.8353
+- test_rmse: 2631.5304
+- train_mae: 1915.9739
+- test_mae: 1955.9531
+
+Top positive drivers:
+- Net_Price: coef=171.2813 (30.62% of total impact)
+- Promotion_Score: coef=50.1794 (8.97% of total impact)
+- Sales_Units: coef=45.1948 (8.08% of total impact)
+- CPI: coef=27.5020 (4.92% of total impact)
+- MRP: coef=26.1149 (4.67% of total impact)
+
+Top negative drivers:
+- Promotion_Score_rolling_mean_4: coef=-77.8050 (13.91% of total impact)
+- Promotion_Score_rolling_mean_12: coef=-29.4894 (5.27% of total impact)
+- TPR_Flag: coef=-12.7480 (2.28% of total impact)
+- TDP: coef=-7.8602 (1.41% of total impact)
+- IG_Banner_Content_Score: coef=-5.9497 (1.06% of total impact)
+
+Notes: Coefficients are from an unconstrained linear model and represent short-term linear associations. Interpret with caution; run causal or experimental analysis for causal claims.
