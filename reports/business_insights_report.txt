@@ -1,0 +1,6 @@
+BUSINESS INSIGHTS REPORT
+=============================================
+Overall Customer Satisfaction: 65.0%
+Products with Highest Positive Sentiment: Sports
+Products Needing Improvement: Home & Kitchen
+Risk Analysis: 0 ambiguous reviews found.
