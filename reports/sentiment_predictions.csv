@@ -1,0 +1,495 @@
+Review_ID,Product_Category,Rating,Review_Date,Review_Text,Review_Length,Predicted_Sentiment,Confidence_Score
+1001,Beauty,4,2023-01-01,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1002,Sports,5,2023-01-02,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1003,Home & Kitchen,3,2023-01-03,"It is exactly as described, neither great nor terrible.",9,NEGATIVE,0.9454313516616821
+1004,Sports,5,2023-01-04,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1005,Sports,3,2023-01-05,"It is exactly as described, neither great nor terrible.",9,NEGATIVE,0.9454313516616821
+1006,Clothing,1,2023-01-06,Very disappointed. The quality is incredibly poor.,7,NEGATIVE,0.9998190999031067
+1007,Home & Kitchen,5,2023-01-07,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1008,Home & Kitchen,1,2023-01-08,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1009,Home & Kitchen,3,2023-01-09,Fairly standard product.,3,POSITIVE,0.9963666200637817
+1010,Sports,5,2023-01-10,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1017,Beauty,4,2023-01-17,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1018,Sports,5,2023-01-18,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1019,Electronics,5,2023-01-19,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1020,Beauty,5,2023-01-20,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1021,Clothing,1,2023-01-21,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1022,Sports,4,2023-01-22,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1023,Beauty,1,2023-01-23,Customer service was completely unhelpful. Do not buy.,8,NEGATIVE,0.9995323419570923
+1024,Electronics,4,2023-01-24,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1025,Electronics,3,2023-01-25,Average quality for the price.,5,POSITIVE,0.8088792562484741
+1026,Home & Kitchen,5,2023-01-26,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1027,Home & Kitchen,3,2023-01-27,"It's okay, does the job but nothing special.",8,NEGATIVE,0.9913709163665771
+1028,Clothing,1,2023-01-28,Very disappointed. The quality is incredibly poor.,7,NEGATIVE,0.9998190999031067
+1029,Beauty,1,2023-01-29,Customer service was completely unhelpful. Do not buy.,8,NEGATIVE,0.9995323419570923
+1030,Beauty,5,2023-01-30,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1031,Home & Kitchen,4,2023-01-31,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1032,Beauty,1,2023-02-01,Customer service was completely unhelpful. Do not buy.,8,NEGATIVE,0.9995323419570923
+1033,Beauty,1,2023-02-02,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1034,Electronics,5,2023-02-03,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1035,Home & Kitchen,1,2023-02-04,Very disappointed. The quality is incredibly poor.,7,NEGATIVE,0.9998190999031067
+1036,Sports,5,2023-02-05,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1037,Home & Kitchen,5,2023-02-06,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1038,Sports,1,2023-02-07,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1039,Electronics,1,2023-02-08,Customer service was completely unhelpful. Do not buy.,8,NEGATIVE,0.9995323419570923
+1040,Clothing,5,2023-02-09,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1041,Beauty,3,2023-02-10,Average quality for the price.,5,POSITIVE,0.8088792562484741
+1042,Electronics,3,2023-02-11,Average quality for the price.,5,POSITIVE,0.8088792562484741
+1043,Beauty,5,2023-02-12,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1044,Clothing,5,2023-02-13,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1045,Clothing,5,2023-02-14,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1046,Electronics,5,2023-02-15,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1047,Clothing,3,2023-02-16,"Not bad, but I've seen better.",6,POSITIVE,0.8772339224815369
+1048,Sports,1,2023-02-17,Very disappointed. The quality is incredibly poor.,7,NEGATIVE,0.9998190999031067
+1049,Clothing,5,2023-02-18,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1050,Beauty,4,2023-02-19,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1051,Beauty,3,2023-02-20,"It is exactly as described, neither great nor terrible.",9,NEGATIVE,0.9454313516616821
+1052,Beauty,5,2023-02-21,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1053,Beauty,1,2023-02-22,Very disappointed. The quality is incredibly poor.,7,NEGATIVE,0.9998190999031067
+1054,Sports,4,2023-02-23,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1055,Home & Kitchen,1,2023-02-24,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1056,Electronics,4,2023-02-25,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1057,Beauty,1,2023-02-26,Very disappointed. The quality is incredibly poor.,7,NEGATIVE,0.9998190999031067
+1058,Clothing,1,2023-02-27,Waste of money. Doesn't work as advertised.,7,NEGATIVE,0.9998058676719666
+1059,Beauty,1,2023-02-28,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1060,Clothing,4,2023-03-01,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1061,Clothing,5,2023-03-02,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1062,Beauty,4,2023-03-03,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1063,Sports,5,2023-03-04,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1064,Clothing,3,2023-03-05,"Not bad, but I've seen better.",6,POSITIVE,0.8772339224815369
+1065,Clothing,3,2023-03-06,Average quality for the price.,5,POSITIVE,0.8088792562484741
+1066,Beauty,5,2023-03-07,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1067,Clothing,2,2023-03-08,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1068,Clothing,5,2023-03-09,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1069,Beauty,1,2023-03-10,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1070,Beauty,5,2023-03-11,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1071,Electronics,1,2023-03-12,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1072,Sports,5,2023-03-13,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1073,Sports,4,2023-03-14,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1074,Clothing,5,2023-03-15,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1075,Sports,1,2023-03-16,Waste of money. Doesn't work as advertised.,7,NEGATIVE,0.9998058676719666
+1076,Clothing,4,2023-03-17,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1077,Electronics,5,2023-03-18,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1078,Beauty,4,2023-03-19,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1079,Beauty,4,2023-03-20,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1080,Beauty,4,2023-03-21,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1081,Sports,4,2023-03-22,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1082,Electronics,4,2023-03-23,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1083,Sports,4,2023-03-24,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1084,Sports,5,2023-03-25,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1085,Electronics,1,2023-03-26,Very disappointed. The quality is incredibly poor.,7,NEGATIVE,0.9998190999031067
+1086,Electronics,3,2023-03-27,Fairly standard product.,3,POSITIVE,0.9963666200637817
+1087,Electronics,5,2023-03-28,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1088,Electronics,5,2023-03-29,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1089,Beauty,4,2023-03-30,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1090,Home & Kitchen,4,2023-03-31,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1091,Home & Kitchen,3,2023-04-01,"It's okay, does the job but nothing special.",8,NEGATIVE,0.9913709163665771
+1092,Electronics,2,2023-04-02,Customer service was completely unhelpful. Do not buy.,8,NEGATIVE,0.9995323419570923
+1093,Home & Kitchen,4,2023-04-03,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1094,Home & Kitchen,3,2023-04-04,Average quality for the price.,5,POSITIVE,0.8088792562484741
+1095,Electronics,4,2023-04-05,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1096,Home & Kitchen,1,2023-04-06,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1097,Sports,5,2023-04-07,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1098,Clothing,5,2023-04-08,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1099,Clothing,4,2023-04-09,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1100,Electronics,4,2023-04-10,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1101,Beauty,3,2023-04-11,"Not bad, but I've seen better.",6,POSITIVE,0.8772339224815369
+1102,Electronics,5,2023-04-12,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1103,Beauty,4,2023-04-13,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1104,Clothing,2,2023-04-14,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1105,Electronics,5,2023-04-15,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1106,Sports,5,2023-04-16,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1107,Home & Kitchen,5,2023-04-17,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1108,Beauty,5,2023-04-18,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1109,Home & Kitchen,4,2023-04-19,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1110,Home & Kitchen,3,2023-04-20,Average quality for the price.,5,POSITIVE,0.8088792562484741
+1111,Electronics,5,2023-04-21,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1112,Home & Kitchen,5,2023-04-22,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1113,Sports,1,2023-04-23,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1114,Home & Kitchen,1,2023-04-24,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1115,Electronics,3,2023-04-25,"It's okay, does the job but nothing special.",8,NEGATIVE,0.9913709163665771
+1116,Sports,5,2023-04-26,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1117,Clothing,5,2023-04-27,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1118,Home & Kitchen,2,2023-04-28,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1119,Electronics,4,2023-04-29,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1120,Clothing,3,2023-04-30,Average quality for the price.,5,POSITIVE,0.8088792562484741
+1121,Clothing,5,2023-05-01,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1122,Beauty,5,2023-05-02,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1123,Sports,5,2023-05-03,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1124,Home & Kitchen,4,2023-05-04,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1125,Electronics,3,2023-05-05,Fairly standard product.,3,POSITIVE,0.9963666200637817
+1126,Beauty,3,2023-05-06,"It is exactly as described, neither great nor terrible.",9,NEGATIVE,0.9454313516616821
+1127,Sports,1,2023-05-07,Waste of money. Doesn't work as advertised.,7,NEGATIVE,0.9998058676719666
+1128,Beauty,5,2023-05-08,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1129,Sports,5,2023-05-09,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1130,Sports,5,2023-05-10,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1131,Home & Kitchen,5,2023-05-11,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1132,Sports,4,2023-05-12,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1133,Beauty,5,2023-05-13,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1134,Sports,5,2023-05-14,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1135,Home & Kitchen,5,2023-05-15,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1136,Home & Kitchen,2,2023-05-16,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1137,Beauty,4,2023-05-17,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1138,Clothing,1,2023-05-18,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1139,Clothing,5,2023-05-19,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1140,Sports,4,2023-05-20,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1141,Electronics,2,2023-05-21,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1142,Sports,4,2023-05-22,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1143,Beauty,4,2023-05-23,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1144,Beauty,3,2023-05-24,Fairly standard product.,3,POSITIVE,0.9963666200637817
+1145,Beauty,1,2023-05-25,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1146,Beauty,4,2023-05-26,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1147,Beauty,4,2023-05-27,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1148,Home & Kitchen,5,2023-05-28,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1149,Clothing,4,2023-05-29,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1150,Beauty,5,2023-05-30,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1151,Electronics,4,2023-05-31,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1152,Electronics,4,2023-06-01,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1153,Electronics,5,2023-06-02,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1154,Electronics,3,2023-06-03,Fairly standard product.,3,POSITIVE,0.9963666200637817
+1155,Home & Kitchen,1,2023-06-04,Very disappointed. The quality is incredibly poor.,7,NEGATIVE,0.9998190999031067
+1156,Electronics,1,2023-06-05,Very disappointed. The quality is incredibly poor.,7,NEGATIVE,0.9998190999031067
+1157,Beauty,5,2023-06-06,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1158,Sports,4,2023-06-07,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1159,Electronics,5,2023-06-08,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1160,Home & Kitchen,2,2023-06-09,Very disappointed. The quality is incredibly poor.,7,NEGATIVE,0.9998190999031067
+1161,Home & Kitchen,1,2023-06-10,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1162,Electronics,1,2023-06-11,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1163,Sports,3,2023-06-12,"Not bad, but I've seen better.",6,POSITIVE,0.8772339224815369
+1164,Electronics,4,2023-06-13,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1165,Home & Kitchen,3,2023-06-14,"Not bad, but I've seen better.",6,POSITIVE,0.8772339224815369
+1166,Clothing,3,2023-06-15,Fairly standard product.,3,POSITIVE,0.9963666200637817
+1167,Beauty,5,2023-06-16,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1168,Home & Kitchen,3,2023-06-17,"It is exactly as described, neither great nor terrible.",9,NEGATIVE,0.9454313516616821
+1169,Electronics,4,2023-06-18,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1170,Beauty,5,2023-06-19,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1171,Electronics,3,2023-06-20,"Not bad, but I've seen better.",6,POSITIVE,0.8772339224815369
+1172,Electronics,4,2023-06-21,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1173,Clothing,5,2023-06-22,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1174,Beauty,5,2023-06-23,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1175,Beauty,1,2023-06-24,Waste of money. Doesn't work as advertised.,7,NEGATIVE,0.9998058676719666
+1176,Clothing,5,2023-06-25,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1177,Home & Kitchen,4,2023-06-26,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1178,Electronics,3,2023-06-27,Average quality for the price.,5,POSITIVE,0.8088792562484741
+1179,Sports,4,2023-06-28,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1180,Electronics,5,2023-06-29,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1181,Electronics,4,2023-06-30,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1182,Home & Kitchen,3,2023-07-01,Average quality for the price.,5,POSITIVE,0.8088792562484741
+1183,Electronics,4,2023-07-02,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1184,Clothing,2,2023-07-03,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1185,Clothing,1,2023-07-04,Waste of money. Doesn't work as advertised.,7,NEGATIVE,0.9998058676719666
+1186,Beauty,1,2023-07-05,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1187,Sports,1,2023-07-06,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1188,Electronics,2,2023-07-07,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1189,Electronics,1,2023-07-08,Very disappointed. The quality is incredibly poor.,7,NEGATIVE,0.9998190999031067
+1190,Home & Kitchen,4,2023-07-09,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1191,Clothing,2,2023-07-10,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1192,Sports,3,2023-07-11,Average quality for the price.,5,POSITIVE,0.8088792562484741
+1193,Beauty,5,2023-07-12,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1194,Clothing,4,2023-07-13,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1195,Beauty,4,2023-07-14,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1196,Home & Kitchen,2,2023-07-15,Very disappointed. The quality is incredibly poor.,7,NEGATIVE,0.9998190999031067
+1197,Home & Kitchen,2,2023-07-16,Very disappointed. The quality is incredibly poor.,7,NEGATIVE,0.9998190999031067
+1198,Electronics,1,2023-07-17,Customer service was completely unhelpful. Do not buy.,8,NEGATIVE,0.9995323419570923
+1199,Sports,2,2023-07-18,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1200,Beauty,3,2023-07-19,Fairly standard product.,3,POSITIVE,0.9963666200637817
+1201,Clothing,2,2023-07-20,Very disappointed. The quality is incredibly poor.,7,NEGATIVE,0.9998190999031067
+1202,Home & Kitchen,1,2023-07-21,Customer service was completely unhelpful. Do not buy.,8,NEGATIVE,0.9995323419570923
+1203,Electronics,1,2023-07-22,Customer service was completely unhelpful. Do not buy.,8,NEGATIVE,0.9995323419570923
+1204,Electronics,4,2023-07-23,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1205,Beauty,2,2023-07-24,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1206,Home & Kitchen,3,2023-07-25,"It's okay, does the job but nothing special.",8,NEGATIVE,0.9913709163665771
+1207,Sports,4,2023-07-26,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1208,Home & Kitchen,4,2023-07-27,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1209,Beauty,1,2023-07-28,Waste of money. Doesn't work as advertised.,7,NEGATIVE,0.9998058676719666
+1210,Beauty,5,2023-07-29,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1211,Home & Kitchen,4,2023-07-30,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1212,Beauty,1,2023-07-31,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1213,Home & Kitchen,5,2023-08-01,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1214,Clothing,5,2023-08-02,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1215,Home & Kitchen,1,2023-08-03,Waste of money. Doesn't work as advertised.,7,NEGATIVE,0.9998058676719666
+1216,Home & Kitchen,3,2023-08-04,Fairly standard product.,3,POSITIVE,0.9963666200637817
+1217,Beauty,5,2023-08-05,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1218,Beauty,5,2023-08-06,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1219,Electronics,2,2023-08-07,Customer service was completely unhelpful. Do not buy.,8,NEGATIVE,0.9995323419570923
+1220,Electronics,2,2023-08-08,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1221,Clothing,3,2023-08-09,Average quality for the price.,5,POSITIVE,0.8088792562484741
+1222,Electronics,4,2023-08-10,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1223,Home & Kitchen,4,2023-08-11,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1224,Beauty,3,2023-08-12,Fairly standard product.,3,POSITIVE,0.9963666200637817
+1225,Electronics,4,2023-08-13,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1226,Electronics,5,2023-08-14,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1227,Clothing,1,2023-08-15,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1228,Clothing,3,2023-08-16,"It's okay, does the job but nothing special.",8,NEGATIVE,0.9913709163665771
+1229,Home & Kitchen,5,2023-08-17,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1230,Beauty,5,2023-08-18,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1231,Clothing,4,2023-08-19,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1232,Electronics,4,2023-08-20,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1233,Beauty,1,2023-08-21,Customer service was completely unhelpful. Do not buy.,8,NEGATIVE,0.9995323419570923
+1234,Beauty,3,2023-08-22,Average quality for the price.,5,POSITIVE,0.8088792562484741
+1235,Electronics,4,2023-08-23,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1236,Clothing,2,2023-08-24,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1237,Electronics,3,2023-08-25,Fairly standard product.,3,POSITIVE,0.9963666200637817
+1238,Beauty,3,2023-08-26,"Not bad, but I've seen better.",6,POSITIVE,0.8772339224815369
+1239,Sports,1,2023-08-27,Waste of money. Doesn't work as advertised.,7,NEGATIVE,0.9998058676719666
+1240,Sports,3,2023-08-28,"Not bad, but I've seen better.",6,POSITIVE,0.8772339224815369
+1241,Home & Kitchen,2,2023-08-29,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1242,Electronics,3,2023-08-30,Average quality for the price.,5,POSITIVE,0.8088792562484741
+1243,Electronics,1,2023-08-31,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1244,Home & Kitchen,5,2023-09-01,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1245,Home & Kitchen,4,2023-09-02,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1246,Home & Kitchen,4,2023-09-03,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1247,Beauty,5,2023-09-04,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1248,Electronics,4,2023-09-05,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1249,Beauty,1,2023-09-06,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1250,Home & Kitchen,4,2023-09-07,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1251,Electronics,4,2023-09-08,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1252,Beauty,5,2023-09-09,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1253,Beauty,3,2023-09-10,"Not bad, but I've seen better.",6,POSITIVE,0.8772339224815369
+1254,Home & Kitchen,1,2023-09-11,Very disappointed. The quality is incredibly poor.,7,NEGATIVE,0.9998190999031067
+1255,Electronics,3,2023-09-12,"It's okay, does the job but nothing special.",8,NEGATIVE,0.9913709163665771
+1256,Home & Kitchen,3,2023-09-13,Average quality for the price.,5,POSITIVE,0.8088792562484741
+1257,Electronics,4,2023-09-14,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1258,Sports,4,2023-09-15,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1259,Clothing,3,2023-09-16,Average quality for the price.,5,POSITIVE,0.8088792562484741
+1260,Clothing,5,2023-09-17,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1261,Clothing,4,2023-09-18,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1262,Home & Kitchen,2,2023-09-19,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1263,Sports,1,2023-09-20,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1264,Electronics,2,2023-09-21,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1265,Beauty,2,2023-09-22,Customer service was completely unhelpful. Do not buy.,8,NEGATIVE,0.9995323419570923
+1266,Electronics,2,2023-09-23,Waste of money. Doesn't work as advertised.,7,NEGATIVE,0.9998058676719666
+1267,Beauty,2,2023-09-24,Very disappointed. The quality is incredibly poor.,7,NEGATIVE,0.9998190999031067
+1268,Electronics,3,2023-09-25,"It's okay, does the job but nothing special.",8,NEGATIVE,0.9913709163665771
+1269,Sports,2,2023-09-26,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1270,Beauty,5,2023-09-27,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1271,Home & Kitchen,1,2023-09-28,Very disappointed. The quality is incredibly poor.,7,NEGATIVE,0.9998190999031067
+1272,Electronics,4,2023-09-29,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1273,Electronics,3,2023-09-30,Average quality for the price.,5,POSITIVE,0.8088792562484741
+1274,Beauty,5,2023-10-01,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1275,Home & Kitchen,1,2023-10-02,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1276,Home & Kitchen,3,2023-10-03,"Not bad, but I've seen better.",6,POSITIVE,0.8772339224815369
+1277,Sports,5,2023-10-04,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1278,Home & Kitchen,5,2023-10-05,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1279,Home & Kitchen,5,2023-10-06,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1280,Home & Kitchen,3,2023-10-07,"It's okay, does the job but nothing special.",8,NEGATIVE,0.9913709163665771
+1281,Clothing,2,2023-10-08,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1282,Sports,4,2023-10-09,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1283,Electronics,5,2023-10-10,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1284,Beauty,4,2023-10-11,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1285,Electronics,4,2023-10-12,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1286,Sports,3,2023-10-13,"It's okay, does the job but nothing special.",8,NEGATIVE,0.9913709163665771
+1287,Beauty,5,2023-10-14,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1288,Sports,2,2023-10-15,Customer service was completely unhelpful. Do not buy.,8,NEGATIVE,0.9995323419570923
+1289,Home & Kitchen,3,2023-10-16,"It is exactly as described, neither great nor terrible.",9,NEGATIVE,0.9454313516616821
+1290,Beauty,3,2023-10-17,Fairly standard product.,3,POSITIVE,0.9963666200637817
+1291,Home & Kitchen,4,2023-10-18,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1292,Electronics,2,2023-10-19,Customer service was completely unhelpful. Do not buy.,8,NEGATIVE,0.9995323419570923
+1293,Electronics,1,2023-10-20,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1294,Beauty,4,2023-10-21,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1295,Beauty,3,2023-10-22,"It is exactly as described, neither great nor terrible.",9,NEGATIVE,0.9454313516616821
+1296,Sports,4,2023-10-23,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1297,Sports,2,2023-10-24,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1298,Home & Kitchen,4,2023-10-25,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1299,Beauty,4,2023-10-26,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1300,Electronics,1,2023-10-27,Customer service was completely unhelpful. Do not buy.,8,NEGATIVE,0.9995323419570923
+1301,Sports,3,2023-10-28,"Not bad, but I've seen better.",6,POSITIVE,0.8772339224815369
+1302,Sports,1,2023-10-29,Very disappointed. The quality is incredibly poor.,7,NEGATIVE,0.9998190999031067
+1303,Electronics,1,2023-10-30,Waste of money. Doesn't work as advertised.,7,NEGATIVE,0.9998058676719666
+1304,Sports,5,2023-10-31,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1305,Home & Kitchen,3,2023-11-01,Fairly standard product.,3,POSITIVE,0.9963666200637817
+1306,Beauty,5,2023-11-02,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1307,Electronics,3,2023-11-03,Average quality for the price.,5,POSITIVE,0.8088792562484741
+1308,Beauty,4,2023-11-04,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1309,Sports,5,2023-11-05,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1310,Sports,4,2023-11-06,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1311,Electronics,4,2023-11-07,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1312,Home & Kitchen,3,2023-11-08,Fairly standard product.,3,POSITIVE,0.9963666200637817
+1313,Clothing,3,2023-11-09,Fairly standard product.,3,POSITIVE,0.9963666200637817
+1314,Electronics,5,2023-11-10,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1315,Clothing,5,2023-11-11,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1316,Clothing,5,2023-11-12,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1317,Home & Kitchen,1,2023-11-13,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1318,Clothing,5,2023-11-14,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1319,Clothing,5,2023-11-15,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1320,Home & Kitchen,2,2023-11-16,Customer service was completely unhelpful. Do not buy.,8,NEGATIVE,0.9995323419570923
+1321,Clothing,1,2023-11-17,Very disappointed. The quality is incredibly poor.,7,NEGATIVE,0.9998190999031067
+1322,Clothing,5,2023-11-18,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1323,Clothing,4,2023-11-19,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1324,Electronics,5,2023-11-20,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1325,Electronics,1,2023-11-21,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1326,Electronics,5,2023-11-22,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1327,Home & Kitchen,2,2023-11-23,Waste of money. Doesn't work as advertised.,7,NEGATIVE,0.9998058676719666
+1328,Sports,2,2023-11-24,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1329,Clothing,2,2023-11-25,Customer service was completely unhelpful. Do not buy.,8,NEGATIVE,0.9995323419570923
+1330,Clothing,5,2023-11-26,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1331,Home & Kitchen,4,2023-11-27,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1332,Clothing,4,2023-11-28,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1333,Electronics,3,2023-11-29,"Not bad, but I've seen better.",6,POSITIVE,0.8772339224815369
+1334,Sports,5,2023-11-30,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1335,Beauty,3,2023-12-01,"It's okay, does the job but nothing special.",8,NEGATIVE,0.9913709163665771
+1336,Clothing,5,2023-12-02,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1337,Electronics,3,2023-12-03,Average quality for the price.,5,POSITIVE,0.8088792562484741
+1338,Beauty,3,2023-12-04,"It is exactly as described, neither great nor terrible.",9,NEGATIVE,0.9454313516616821
+1339,Sports,4,2023-12-05,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1340,Beauty,3,2023-12-06,"It is exactly as described, neither great nor terrible.",9,NEGATIVE,0.9454313516616821
+1341,Electronics,5,2023-12-07,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1342,Beauty,4,2023-12-08,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1343,Home & Kitchen,2,2023-12-09,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1344,Beauty,5,2023-12-10,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1345,Clothing,3,2023-12-11,"It's okay, does the job but nothing special.",8,NEGATIVE,0.9913709163665771
+1346,Clothing,4,2023-12-12,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1347,Home & Kitchen,5,2023-12-13,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1348,Electronics,4,2023-12-14,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1349,Clothing,1,2023-12-15,Customer service was completely unhelpful. Do not buy.,8,NEGATIVE,0.9995323419570923
+1350,Sports,5,2023-12-16,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1351,Clothing,4,2023-12-17,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1352,Clothing,3,2023-12-18,"It is exactly as described, neither great nor terrible.",9,NEGATIVE,0.9454313516616821
+1353,Electronics,1,2023-12-19,Very disappointed. The quality is incredibly poor.,7,NEGATIVE,0.9998190999031067
+1354,Beauty,5,2023-12-20,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1355,Clothing,4,2023-12-21,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1356,Home & Kitchen,4,2023-12-22,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1357,Beauty,5,2023-12-23,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1358,Sports,5,2023-12-24,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1359,Electronics,2,2023-12-25,Customer service was completely unhelpful. Do not buy.,8,NEGATIVE,0.9995323419570923
+1360,Sports,3,2023-12-26,"It's okay, does the job but nothing special.",8,NEGATIVE,0.9913709163665771
+1361,Beauty,2,2023-12-27,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1362,Beauty,5,2023-12-28,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1363,Beauty,1,2023-12-29,Very disappointed. The quality is incredibly poor.,7,NEGATIVE,0.9998190999031067
+1364,Sports,4,2023-12-30,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1365,Beauty,5,2023-12-31,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1366,Sports,5,2024-01-01,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1367,Beauty,3,2024-01-02,"Not bad, but I've seen better.",6,POSITIVE,0.8772339224815369
+1368,Home & Kitchen,5,2024-01-03,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1369,Beauty,1,2024-01-04,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1370,Sports,5,2024-01-05,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1371,Clothing,1,2024-01-06,Waste of money. Doesn't work as advertised.,7,NEGATIVE,0.9998058676719666
+1372,Beauty,3,2024-01-07,"It is exactly as described, neither great nor terrible.",9,NEGATIVE,0.9454313516616821
+1373,Clothing,5,2024-01-08,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1374,Home & Kitchen,1,2024-01-09,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1375,Electronics,2,2024-01-10,Waste of money. Doesn't work as advertised.,7,NEGATIVE,0.9998058676719666
+1376,Home & Kitchen,5,2024-01-11,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1377,Beauty,5,2024-01-12,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1378,Clothing,4,2024-01-13,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1379,Clothing,4,2024-01-14,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1380,Sports,4,2024-01-15,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1381,Clothing,3,2024-01-16,"It's okay, does the job but nothing special.",8,NEGATIVE,0.9913709163665771
+1382,Sports,3,2024-01-17,"It is exactly as described, neither great nor terrible.",9,NEGATIVE,0.9454313516616821
+1383,Electronics,2,2024-01-18,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1384,Beauty,5,2024-01-19,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1385,Sports,4,2024-01-20,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1386,Electronics,3,2024-01-21,Average quality for the price.,5,POSITIVE,0.8088792562484741
+1387,Clothing,4,2024-01-22,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1388,Clothing,5,2024-01-23,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1389,Electronics,2,2024-01-24,Very disappointed. The quality is incredibly poor.,7,NEGATIVE,0.9998190999031067
+1390,Clothing,4,2024-01-25,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1391,Electronics,4,2024-01-26,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1392,Sports,4,2024-01-27,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1393,Sports,1,2024-01-28,Customer service was completely unhelpful. Do not buy.,8,NEGATIVE,0.9995323419570923
+1394,Electronics,5,2024-01-29,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1395,Sports,5,2024-01-30,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1396,Sports,4,2024-01-31,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1397,Sports,4,2024-02-01,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1398,Home & Kitchen,5,2024-02-02,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1399,Beauty,5,2024-02-03,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1400,Clothing,2,2024-02-04,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1401,Home & Kitchen,4,2024-02-05,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1402,Sports,4,2024-02-06,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1403,Electronics,3,2024-02-07,Average quality for the price.,5,POSITIVE,0.8088792562484741
+1404,Sports,5,2024-02-08,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1405,Beauty,5,2024-02-09,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1406,Sports,5,2024-02-10,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1407,Electronics,4,2024-02-11,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1408,Beauty,1,2024-02-12,Waste of money. Doesn't work as advertised.,7,NEGATIVE,0.9998058676719666
+1409,Sports,5,2024-02-13,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1410,Beauty,5,2024-02-14,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1411,Clothing,1,2024-02-15,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1412,Clothing,5,2024-02-16,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1413,Sports,5,2024-02-17,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1414,Beauty,4,2024-02-18,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1415,Electronics,4,2024-02-19,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1416,Sports,3,2024-02-20,"It is exactly as described, neither great nor terrible.",9,NEGATIVE,0.9454313516616821
+1417,Clothing,1,2024-02-21,Very disappointed. The quality is incredibly poor.,7,NEGATIVE,0.9998190999031067
+1418,Clothing,3,2024-02-22,"It is exactly as described, neither great nor terrible.",9,NEGATIVE,0.9454313516616821
+1419,Sports,5,2024-02-23,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1420,Beauty,1,2024-02-24,Customer service was completely unhelpful. Do not buy.,8,NEGATIVE,0.9995323419570923
+1421,Clothing,3,2024-02-25,"Not bad, but I've seen better.",6,POSITIVE,0.8772339224815369
+1422,Beauty,3,2024-02-26,"It's okay, does the job but nothing special.",8,NEGATIVE,0.9913709163665771
+1423,Clothing,4,2024-02-27,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1424,Clothing,5,2024-02-28,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1425,Home & Kitchen,3,2024-02-29,Fairly standard product.,3,POSITIVE,0.9963666200637817
+1426,Clothing,3,2024-03-01,Fairly standard product.,3,POSITIVE,0.9963666200637817
+1427,Electronics,5,2024-03-02,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1428,Sports,4,2024-03-03,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1429,Sports,2,2024-03-04,Waste of money. Doesn't work as advertised.,7,NEGATIVE,0.9998058676719666
+1430,Beauty,4,2024-03-05,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1431,Clothing,1,2024-03-06,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1432,Electronics,2,2024-03-07,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1433,Beauty,4,2024-03-08,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1434,Home & Kitchen,3,2024-03-09,"Not bad, but I've seen better.",6,POSITIVE,0.8772339224815369
+1435,Beauty,5,2024-03-10,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1436,Beauty,3,2024-03-11,Average quality for the price.,5,POSITIVE,0.8088792562484741
+1437,Clothing,4,2024-03-12,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1438,Home & Kitchen,4,2024-03-13,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1439,Beauty,1,2024-03-14,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1440,Electronics,4,2024-03-15,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1441,Electronics,2,2024-03-16,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1442,Sports,5,2024-03-17,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1443,Home & Kitchen,1,2024-03-18,Waste of money. Doesn't work as advertised.,7,NEGATIVE,0.9998058676719666
+1444,Home & Kitchen,3,2024-03-19,Average quality for the price.,5,POSITIVE,0.8088792562484741
+1445,Sports,1,2024-03-20,Waste of money. Doesn't work as advertised.,7,NEGATIVE,0.9998058676719666
+1446,Beauty,5,2024-03-21,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1447,Home & Kitchen,4,2024-03-22,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1448,Electronics,4,2024-03-23,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1449,Electronics,1,2024-03-24,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1450,Clothing,5,2024-03-25,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1451,Home & Kitchen,2,2024-03-26,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1452,Beauty,5,2024-03-27,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1453,Sports,2,2024-03-28,Very disappointed. The quality is incredibly poor.,7,NEGATIVE,0.9998190999031067
+1454,Sports,2,2024-03-29,Waste of money. Doesn't work as advertised.,7,NEGATIVE,0.9998058676719666
+1455,Beauty,1,2024-03-30,Customer service was completely unhelpful. Do not buy.,8,NEGATIVE,0.9995323419570923
+1456,Clothing,4,2024-03-31,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1457,Sports,4,2024-04-01,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1458,Home & Kitchen,1,2024-04-02,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1459,Clothing,5,2024-04-03,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1460,Home & Kitchen,4,2024-04-04,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1461,Electronics,4,2024-04-05,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1462,Clothing,3,2024-04-06,"It is exactly as described, neither great nor terrible.",9,NEGATIVE,0.9454313516616821
+1463,Sports,3,2024-04-07,"It's okay, does the job but nothing special.",8,NEGATIVE,0.9913709163665771
+1464,Clothing,4,2024-04-08,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1465,Clothing,2,2024-04-09,Waste of money. Doesn't work as advertised.,7,NEGATIVE,0.9998058676719666
+1466,Clothing,2,2024-04-10,Waste of money. Doesn't work as advertised.,7,NEGATIVE,0.9998058676719666
+1467,Clothing,5,2024-04-11,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1468,Home & Kitchen,5,2024-04-12,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1469,Electronics,3,2024-04-13,"It's okay, does the job but nothing special.",8,NEGATIVE,0.9913709163665771
+1470,Beauty,3,2024-04-14,"It is exactly as described, neither great nor terrible.",9,NEGATIVE,0.9454313516616821
+1471,Clothing,4,2024-04-15,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1472,Sports,3,2024-04-16,Fairly standard product.,3,POSITIVE,0.9963666200637817
+1473,Clothing,1,2024-04-17,Very disappointed. The quality is incredibly poor.,7,NEGATIVE,0.9998190999031067
+1474,Sports,2,2024-04-18,Customer service was completely unhelpful. Do not buy.,8,NEGATIVE,0.9995323419570923
+1475,Home & Kitchen,5,2024-04-19,Best thing I've bought all year. Five stars!,8,POSITIVE,0.9993208646774292
+1476,Sports,4,2024-04-20,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1477,Beauty,1,2024-04-21,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1478,Electronics,2,2024-04-22,Very disappointed. The quality is incredibly poor.,7,NEGATIVE,0.9998190999031067
+1479,Sports,2,2024-04-23,Very disappointed. The quality is incredibly poor.,7,NEGATIVE,0.9998190999031067
+1480,Sports,4,2024-04-24,Exceeded my expectations. Will definitely buy again.,7,POSITIVE,0.9997567534446716
+1481,Electronics,1,2024-04-25,Arrived damaged and late. I want a refund.,8,NEGATIVE,0.9993172883987427
+1482,Beauty,1,2024-04-26,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1483,Clothing,5,2024-04-27,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1484,Sports,2,2024-04-28,Waste of money. Doesn't work as advertised.,7,NEGATIVE,0.9998058676719666
+1485,Electronics,4,2024-04-29,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1486,Home & Kitchen,2,2024-04-30,Customer service was completely unhelpful. Do not buy.,8,NEGATIVE,0.9995323419570923
+1487,Electronics,1,2024-05-01,Customer service was completely unhelpful. Do not buy.,8,NEGATIVE,0.9995323419570923
+1488,Home & Kitchen,2,2024-05-02,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1489,Beauty,5,2024-05-03,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1490,Clothing,5,2024-05-04,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1491,Electronics,5,2024-05-05,"Absolutely love this product, it works perfectly!",7,POSITIVE,0.9998797178268433
+1492,Sports,3,2024-05-06,"It is exactly as described, neither great nor terrible.",9,NEGATIVE,0.9454313516616821
+1493,Beauty,4,2024-05-07,Very satisfied with my purchase. The material is great.,9,POSITIVE,0.999880313873291
+1494,Electronics,2,2024-05-08,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1495,Sports,3,2024-05-09,Average quality for the price.,5,POSITIVE,0.8088792562484741
+1496,Electronics,5,2024-05-10,Great quality and fast shipping. Highly recommend.,7,POSITIVE,0.999872088432312
+1497,Home & Kitchen,1,2024-05-11,Waste of money. Doesn't work as advertised.,7,NEGATIVE,0.9998058676719666
+1498,Electronics,1,2024-05-12,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
+1499,Electronics,2,2024-05-13,Very disappointed. The quality is incredibly poor.,7,NEGATIVE,0.9998190999031067
+1500,Electronics,1,2024-05-14,Terrible experience. The item broke after two days.,8,NEGATIVE,0.9992451667785645
