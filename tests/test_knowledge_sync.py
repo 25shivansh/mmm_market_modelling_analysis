@@ -41,7 +41,7 @@ def run_tests():
 
     passed = 0
     failed = 0
-    total = 12
+    total = 13
 
     def record_result(name, action):
         nonlocal passed, failed
@@ -150,6 +150,70 @@ def run_tests():
         if u != 0:
             raise AssertionError(f"Expected 0 synced reports, got {u}")
     record_result("Empty database", test12)
+
+    # Test 13: Verify deterministic vector IDs
+    def test13():
+        # SETUP: Delete every vector from Pinecone and every report from MongoDB
+        sync.pinecone_manager.delete_all_vectors()
+        repo.delete_all_reports()
+
+        # Insert sample reports
+        repo.save_report(
+            category="marketing",
+            title="Marketing Performance Report",
+            content="Marketing campaign performance improved by 15% this quarter.",
+            metadata={"department": "Marketing"}
+        )
+        repo.save_report(
+            category="forecast",
+            title="Sales Forecast Report",
+            content="Sales are expected to increase by 10% next quarter.",
+            metadata={"region": "North"}
+        )
+        repo.save_report(
+            category="sales",
+            title="Sales Performance Report",
+            content="Overall revenue increased due to higher customer retention.",
+            metadata={"team": "Sales"}
+        )
+
+        # STEP 1: First synchronization
+        uploaded_1 = sync.sync_all_reports()
+        if not isinstance(uploaded_1, int) or uploaded_1 <= 0:
+            raise AssertionError(f"Expected uploaded count > 0, got {uploaded_1}")
+        print("[PASS] First synchronization")
+
+        # STEP 2: Fetch initial vector count
+        stats1 = sync.pinecone_manager.get_index_stats()
+        first_vector_count = stats1.get("total_vector_count", stats1.get("total_vectors", 0))
+        if first_vector_count <= 0:
+            raise AssertionError(f"Expected first_vector_count > 0, got {first_vector_count}")
+        print("[PASS] Initial vector count")
+
+        # STEP 3: Second synchronization without modifying MongoDB
+        uploaded_2 = sync.sync_all_reports()
+        if not isinstance(uploaded_2, int) or uploaded_2 <= 0:
+            raise AssertionError(f"Expected uploaded count > 0, got {uploaded_2}")
+        print("[PASS] Second synchronization")
+
+        # STEP 4: Fetch vector count again and verify no duplicate vectors created
+        stats2 = sync.pinecone_manager.get_index_stats()
+        second_vector_count = stats2.get("total_vector_count", stats2.get("total_vectors", 0))
+        if first_vector_count != second_vector_count:
+            raise AssertionError(
+                f"Expected first_vector_count ({first_vector_count}) == second_vector_count ({second_vector_count})"
+            )
+        print("[PASS] No duplicate vectors created")
+
+        # STEP 5: Pinecone cleanup and verify count is 0
+        sync.pinecone_manager.delete_all_vectors()
+        stats3 = sync.pinecone_manager.get_index_stats()
+        total_vector_count = stats3.get("total_vector_count", stats3.get("total_vectors", 0))
+        if total_vector_count != 0:
+            raise AssertionError(f"Expected total_vector_count == 0, got {total_vector_count}")
+        print("[PASS] Pinecone cleanup")
+
+    record_result("Verify deterministic vector IDs", test13)
 
     # Clean database after tests
     repo.delete_all_reports()
