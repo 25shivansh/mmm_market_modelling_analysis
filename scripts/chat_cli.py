@@ -27,7 +27,7 @@ sys.path.append(str(PROJECT_ROOT))
 logging.getLogger("httpx").setLevel(logging.WARNING)
 logging.getLogger("httpcore").setLevel(logging.WARNING)
 
-from src.rag.rag_pipeline import RAGPipeline
+from src.rag.marketing_rag_service import MarketingRAGService
 
 
 def print_banner() -> None:
@@ -61,16 +61,13 @@ def ask_question() -> str:
         return "exit"
 
 
-def display_answer(question: str, result: dict, elapsed_time: float) -> None:
+def display_answer(question: str, answer: str, elapsed_time: float) -> None:
     print("----------------------------------------------------")
     print("Question")
     print(f"{question}")
     print("----------------------------------------------------")
-    print("Retrieved Documents")
-    print(f"{result.get('retrieved_documents', 0)}")
-    print("----------------------------------------------------")
     print("Answer")
-    print(f"{result.get('answer', '')}")
+    print(f"{answer}")
     print("----------------------------------------------------")
     print("Response Time")
     print(f"{elapsed_time:.2f} seconds")
@@ -78,16 +75,16 @@ def display_answer(question: str, result: dict, elapsed_time: float) -> None:
 
 
 def main() -> None:
-    print("Initializing RAG Pipeline...")
+    print("Initializing RAG Service...")
     try:
-        pipeline = RAGPipeline()
+        service = MarketingRAGService()
         print("Ready.")
     except Exception as e:
         print(f"\n{Fore.RED}Error{Style.RESET_ALL}")
         if "MISTRAL_API_KEY" in str(e):
             print("Missing API key. Please set MISTRAL_API_KEY in your .env file.")
         else:
-            print(f"Pipeline initialization failed: {e}")
+            print(f"Service initialization failed: {e}")
         sys.exit(1)
 
     print_banner()
@@ -111,11 +108,11 @@ def main() -> None:
 
         try:
             start_time = time.time()
-            result = pipeline.generate_answer(question)
+            answer = service.ask(question)
             end_time = time.time()
             
             elapsed = end_time - start_time
-            display_answer(question, result, elapsed)
+            display_answer(question, answer, elapsed)
             
         except Exception as e:
             error_str = str(e)
@@ -128,7 +125,7 @@ def main() -> None:
                 print("Mistral API failure. Please check your connection or API key limits.")
             elif "Pinecone" in error_str:
                 print("Pinecone failure. Please check your vector database connection.")
-            elif "Retriever" in error_str:
+            elif "Retriever" in error_str or "QueryEngine" in error_str:
                 print("Retriever failure. Could not fetch documents from the vector database.")
             else:
                 print("An unexpected error occurred:")

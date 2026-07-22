@@ -16,28 +16,20 @@ from src.knowledge_base.knowledge_sync import KnowledgeSync
 def run_tests():
     repo = ReportRepository()
 
-    # Clean database before tests
-    repo.delete_all_reports()
+    # Load existing reports from MongoDB
+    existing_reports = repo.get_reports()
+    if not existing_reports:
+        print("No reports available in MongoDB. Import reports before running this integration test.")
+        sys.exit(1)
 
-    # Insert sample reports
-    id1 = repo.save_report(
-        category="marketing",
-        title="Marketing Performance Report",
-        content="Marketing campaign performance improved by 15% this quarter.",
-        metadata={"department": "Marketing"}
-    )
-    id2 = repo.save_report(
-        category="forecast",
-        title="Sales Forecast Report",
-        content="Sales are expected to increase by 10% next quarter.",
-        metadata={"region": "North"}
-    )
-    id3 = repo.save_report(
-        category="sales",
-        title="Sales Performance Report",
-        content="Overall revenue increased due to higher customer retention.",
-        metadata={"team": "Sales"}
-    )
+    expected_total_reports = len(existing_reports)
+
+    # Extract available categories and a valid report ID from real MongoDB data
+    categories = list(dict.fromkeys(r.get("category") for r in existing_reports if r.get("category")))
+    valid_category_1 = categories[0] if categories else "marketing"
+    valid_category_2 = categories[1] if len(categories) > 1 else valid_category_1
+
+    valid_report_id = str(existing_reports[0]["_id"])
 
     passed = 0
     failed = 0
@@ -65,8 +57,8 @@ def run_tests():
     # Test 2: count_reports()
     def test2():
         count = sync.count_reports()
-        if count != 3:
-            raise AssertionError(f"Expected 3 reports, got {count}")
+        if count != expected_total_reports:
+            raise AssertionError(f"Expected {expected_total_reports} reports, got {count}")
     record_result("Count reports", test2)
 
     # Test 3: count_chunks()
@@ -85,30 +77,30 @@ def run_tests():
             raise AssertionError(f"Expected uploaded count > 0, got {uploaded}")
     record_result("Sync all reports", test4)
 
-    # Test 5: sync_category("marketing")
+    # Test 5: sync_category(valid_category_1)
     def test5():
-        mkt_uploaded = sync.sync_category("marketing")
+        mkt_uploaded = sync.sync_category(valid_category_1)
         if not isinstance(mkt_uploaded, int) or mkt_uploaded <= 0:
             raise AssertionError(f"Expected uploaded count > 0, got {mkt_uploaded}")
-    record_result("Sync category marketing", test5)
+    record_result(f"Sync category {valid_category_1}", test5)
 
-    # Test 6: sync_category("forecast")
+    # Test 6: sync_category(valid_category_2)
     def test6():
-        fc_uploaded = sync.sync_category("forecast")
+        fc_uploaded = sync.sync_category(valid_category_2)
         if not isinstance(fc_uploaded, int) or fc_uploaded <= 0:
             raise AssertionError(f"Expected uploaded count > 0, got {fc_uploaded}")
-    record_result("Sync category forecast", test6)
+    record_result(f"Sync category {valid_category_2}", test6)
 
     # Test 7: sync_category("unknown")
     def test7():
-        unk_uploaded = sync.sync_category("unknown")
+        unk_uploaded = sync.sync_category("nonexistent_category_xyz")
         if unk_uploaded != 0:
             raise AssertionError(f"Expected 0 for unknown category, got {unk_uploaded}")
     record_result("Sync category unknown", test7)
 
     # Test 8: sync_report(report_id)
     def test8():
-        rep_uploaded = sync.sync_report(str(id1))
+        rep_uploaded = sync.sync_report(valid_report_id)
         if not isinstance(rep_uploaded, int) or rep_uploaded <= 0:
             raise AssertionError(f"Expected uploaded count > 0, got {rep_uploaded}")
     record_result("Sync report by ID", test8)
@@ -142,41 +134,22 @@ def run_tests():
 
     # Test 12: Empty database
     def test12():
-        repo.delete_all_reports()
-        c = sync.count_reports()
-        if c != 0:
-            raise AssertionError(f"Expected 0 reports, got {c}")
-        u = sync.sync_all_reports()
-        if u != 0:
-            raise AssertionError(f"Expected 0 synced reports, got {u}")
+        empty_repo = ReportRepository()
+        empty_repo._collection = repo._db_manager.get_collection("_temp_empty_test_collection")
+        try:
+            empty_sync = KnowledgeSync(loader=MongoDocumentLoader(empty_repo))
+            c = empty_sync.count_reports()
+            if c != 0:
+                raise AssertionError(f"Expected 0 reports, got {c}")
+            u = empty_sync.sync_all_reports()
+            if u != 0:
+                raise AssertionError(f"Expected 0 synced reports, got {u}")
+        finally:
+            empty_repo._collection.drop()
     record_result("Empty database", test12)
 
     # Test 13: Verify deterministic vector IDs
     def test13():
-        # SETUP: Delete every vector from Pinecone and every report from MongoDB
-        sync.pinecone_manager.delete_all_vectors()
-        repo.delete_all_reports()
-
-        # Insert sample reports
-        repo.save_report(
-            category="marketing",
-            title="Marketing Performance Report",
-            content="Marketing campaign performance improved by 15% this quarter.",
-            metadata={"department": "Marketing"}
-        )
-        repo.save_report(
-            category="forecast",
-            title="Sales Forecast Report",
-            content="Sales are expected to increase by 10% next quarter.",
-            metadata={"region": "North"}
-        )
-        repo.save_report(
-            category="sales",
-            title="Sales Performance Report",
-            content="Overall revenue increased due to higher customer retention.",
-            metadata={"team": "Sales"}
-        )
-
         # STEP 1: First synchronization
         uploaded_1 = sync.sync_all_reports()
         if not isinstance(uploaded_1, int) or uploaded_1 <= 0:
@@ -205,18 +178,7 @@ def run_tests():
             )
         print("[PASS] No duplicate vectors created")
 
-        # STEP 5: Pinecone cleanup and verify count is 0
-        sync.pinecone_manager.delete_all_vectors()
-        stats3 = sync.pinecone_manager.get_index_stats()
-        total_vector_count = stats3.get("total_vector_count", stats3.get("total_vectors", 0))
-        if total_vector_count != 0:
-            raise AssertionError(f"Expected total_vector_count == 0, got {total_vector_count}")
-        print("[PASS] Pinecone cleanup")
-
     record_result("Verify deterministic vector IDs", test13)
-
-    # Clean database after tests
-    repo.delete_all_reports()
 
     # Print Summary
     print("\n=====================================")
@@ -226,7 +188,19 @@ def run_tests():
     print("=====================================\n")
 
     if passed == total:
-        print("KnowledgeSync integration tests completed successfully.")
+        print("""=====================================
+
+KnowledgeSync integration tests completed successfully.
+
+Pinecone vectors have been preserved for inspection.
+
+Run:
+
+python tests/check_pinecone_contents.py
+
+to verify indexed documents.
+
+=====================================""")
 
 
 if __name__ == "__main__":
