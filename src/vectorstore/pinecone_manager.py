@@ -88,11 +88,18 @@ class PineconeManager:
             meta = ed.metadata.copy()
             meta["text"] = ed.document.page_content
             
-            # Determine vector ID (use chunk_id from metadata if present, else generate one)
-            vec_id = meta.get("chunk_id")
-            if not vec_id:
-                vec_id = str(uuid.uuid4())
-                meta["chunk_id"] = vec_id
+            # Determine vector ID: deterministic format <report_id>_<chunk_index> if present, else fallback
+            report_id = meta.get("report_id")
+            chunk_index = meta.get("chunk_index")
+
+            if report_id is not None and chunk_index is not None and str(report_id).strip() != "" and str(chunk_index).strip() != "":
+                vec_id = f"{report_id}_{chunk_index}"
+            else:
+                vec_id = meta.get("chunk_id")
+                if not vec_id:
+                    vec_id = str(uuid.uuid4())
+
+            meta["vector_id"] = str(vec_id)
                 
             # Create vector payload
             vector = {
