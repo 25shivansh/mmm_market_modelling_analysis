@@ -1,9 +1,11 @@
 import Report from '../models/reportModel.js';
 
-// Get all reports for the logged-in user
+// Get all reports for the logged-in user (excludes heavy report text to optimize response size)
 export async function getAllReports(req, res) {
     try {
-        const reports = await Report.find({ userId: req.user.id }).sort({ createdAt: -1 });
+        const reports = await Report.find({ userId: req.user.id })
+            .select('-content -reportContent')
+            .sort({ createdAt: -1 });
 
         return res.status(200).json({
             success: true,

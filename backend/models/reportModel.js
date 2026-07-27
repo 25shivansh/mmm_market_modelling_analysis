@@ -16,23 +16,34 @@ const reportSchema = new mongoose.Schema(
       type: String,
       required: [true, 'Report type is required'],
       enum: ['forecast', 'sentiment', 'marketing', 'business_insights', 'summary'],
+      default: 'summary',
     },
     title: {
       type: String,
       required: [true, 'Report title is required'],
       trim: true,
+      default: 'Data Understanding Report',
     },
     content: {
       type: String,
       default: '',
     },
+    reportContent: {
+      type: String,
+      default: '',
+    },
+    summary: {
+      type: Object,
+      default: {},
+    },
     status: {
       type: String,
-      enum: ['pending', 'generated', 'failed'],
-      default: 'pending',
+      enum: ['pending', 'generated', 'completed', 'failed'],
+      default: 'completed',
     },
     generatedAt: {
       type: Date,
+      default: Date.now,
     },
   },
   {
